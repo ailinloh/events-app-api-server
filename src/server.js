@@ -3,7 +3,7 @@
  */
 
 const app = require('../src/app');
-const debug = require('debug')('roi-backend:server');
+// const debug = require('debug')('roi-backend:server');
 const http = require('http');
 const DEFAULT_PORT='8082';
 
@@ -31,6 +31,7 @@ server.on('listening', onListening);
 /**
  * Normalize a port into a number or string.
  */
+//hello
 
 function normalizePort(val) {
     const port = parseInt(val, 10);
@@ -82,8 +83,9 @@ function onListening() {
     const bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
-    debug('Listening on ' + bind);
+    // debug('Listening on ' + bind);
     console.log('Listening on: ', bind);
 }
 
 module.exports = server;
+// hello is this working?
